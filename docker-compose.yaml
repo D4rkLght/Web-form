@@ -1,0 +1,21 @@
+mongodb:
+  image: mongo:latest
+  hostname: mongodb
+  volumes:
+    - ./init-db.js:/docker-entrypoint-initdb.d/init-db.js:ro
+  ports:
+    - 27017:27017
+
+web:
+  build: .
+  ports:
+    - "5000:5000"
+  container_name: web-container
+  environment:
+      FLASK_APP: Web
+      FLASK_ENV: development
+      MONGODB_URI: mongodb://mongodb:27017/myDatabase
+  volumes:
+    - .:/app
+  links:
+  - mongodb

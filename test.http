@@ -1,0 +1,7 @@
+
+
+# POST http://127.0.0.1:5000/get_form?phone=%2B79257913223&date=26.01.1993
+
+
+POST http://127.0.0.1:5000/get_form?email=1frost34eone@gmail.com&
+# GET http://127.0.0.1:5000/
