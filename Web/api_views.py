@@ -1,8 +1,9 @@
 import re
 from typing import Dict
+
 from flask import jsonify, request
 
-from . import app, db, PHONE_NUMBER_PATTERN, EMAIL_PATTERN, DATE_PATTERN
+from . import DATE_PATTERN, EMAIL_PATTERN, PHONE_NUMBER_PATTERN, app, db
 
 
 @app.route('/get_form', methods=['POST'])

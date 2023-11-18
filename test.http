@@ -3,5 +3,5 @@
 # POST http://127.0.0.1:5000/get_form?phone=%2B79257913223&date=26.01.1993
 
 
-POST http://127.0.0.1:5000/get_form?email=1frost34eone@gmail.com&
+POST http://127.0.0.1:5000/get_form?test1=11.11.1111&test2=%2B71111111111&test3=text&test4=test@test.com
 # GET http://127.0.0.1:5000/
