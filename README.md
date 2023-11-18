@@ -61,6 +61,7 @@ make start
 - http://127.0.0.1:5000/get_form?email=1fe@gmail.com&date=21.11.2002
 
 ```shell
+Ответ:
 {
     "template_name": "Form-5"
 }
@@ -69,6 +70,7 @@ make start
 - http://127.0.0.1:5000/get_form?email=1fe@gmail.com&date=21.11.2002&text=text&phone=71111111111
 
 ```shell
+Ответ:
 {
   "template_name": "Form-15"
 }
@@ -79,7 +81,9 @@ make start
 
 - http://127.0.0.1:5000/get_form?date=1fe@gmail.com&email=21.11.2002&phone=text&text=71111111111
 
+
 ```shell
+Ответ:
 {
   "date": "email_type",
   "email": "date_type",
@@ -91,6 +95,7 @@ make start
 - http://127.0.0.1:5000/get_form?test1=11.11.1111&test2=%2B71111111111&test3=text&test4=test@test.com
 
 ```shell
+Ответ:
 {
   "test1": "date_type",
   "test2": "phone_type",
