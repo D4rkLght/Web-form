@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "web-form"
+version = "0.1.0"
+description = ""
+authors = ["Ярослав Андреев <1frost34eone@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^1.0.0"
+flask-pymongo = "^2.3.0"
+flask = "2.0.2"
+werkzeug = "2.0.2"
+pymongo = "^4.6.0"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
